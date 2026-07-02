@@ -1,23 +1,32 @@
-# Aulas de GitHub
-# Git e GitHub
-## Objetivos
+# 🎓 Aulas de GitHub
+## 💻 Git e GitHub
+
+## 🎯 Objetivos
 Ao concluir este módulo você será capaz de:
-- criar repositórios
-- utilizar commits
-- trabalhar com branches
-- resolver conflitos
-- abrir Pull Requests
+1. Criar **repositórios**
+2. Utilizar *commits*
+3. Trabalhar com *branches*
+4. Resolver **conflitos**
+5. Abrir *Pull Requests*
+
 ---
-## Conteúdo
-- Introdução
-- Git
-- GitHub
-- Branches
-- Merge
-- Pull Request
+
+## 📚 Conteúdo
+| Tópicos |
+| :--- |
+| - Introdução |
+| - Git |
+| - GitHub |
+| - Branches |
+| - Merge |
+| - Pull Request |
+
 ---
-## Exercícios
-- Exercício 01
+
+## 📝 Exercícios
+* ➡️ - Exercício 01
+
 ---
-## Projeto
-Criar um portfólio utilizando GitHub.
+
+## 🚀 Projeto
+Criar um `portfólio` utilizando `GitHub`.
