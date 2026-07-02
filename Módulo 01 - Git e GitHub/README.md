@@ -1,6 +1,28 @@
 # 🎓 Aulas de GitHub
 ## 💻 Git e GitHub
 
+<!-- Exercício 7: Badges do GitHub -->
+![Markdown](https://img.shields.io/badge/Linguagem-Markdown-blue)
+![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-green)
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
+
+<!-- Exercício 9: Links internos (Índice) -->
+## 📌 Índice
+* [🎯 Objetivos](#-objetivos)
+* [📚 Conteúdo](#-conteúdo)
+* [📝 Exercícios](#-exercícios)
+* [🚀 Projeto](#-projeto)
+* [🛠️ Tecnologias Utilizadas](#️-tecnologias-utilizadas)
+* [📂 Estrutura das Pastas](#-estrutura-das-pastas)
+* [⚙️ Como Executar o Projeto e Autor](#️-como-executar-o-projeto-e-autor)
+* [💻 Exemplos de Código](#-exemplos-de-código)
+* [✅ Checklist de Atividades](#-checklist-de-atividades)
+* [📊 Tabela de Conhecimento](#-tabela-de-conhecimento)
+* [💬 Citação Importante](#-citação-importante)
+* [🌟 Recursos Extras do Markdown](#-recursos-extras-do-markdown)
+
+---
+
 ## 🎯 Objetivos
 Ao concluir este módulo você será capaz de:
 1. criar **repositórios**
@@ -65,3 +87,14 @@ Para visualizar e interagir com este projeto, basta navegar pelas pastas listada
 Este projeto foi desenvolvido com dedicação por **Rodrigo Araújo de Melo**.
 * 💻 Meu perfil: [GitHub](https://github.com/seu-usuario)
 * ✉️ Entre em contato.
+
+---
+
+## 💻 Exemplos de Código
+<!-- Exercício 4: Blocos de código -->
+
+### Comandos Git
+```bash
+git init
+git add .
+git commit -m "feat: adicionando novos exercicios ao readme"
