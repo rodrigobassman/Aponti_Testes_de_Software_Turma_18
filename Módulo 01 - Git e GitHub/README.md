@@ -85,16 +85,58 @@ A organização dos arquivos deste repositório está estruturada da seguinte fo
 Para visualizar e interagir com este projeto, basta navegar pelas pastas listadas acima diretamente pelo menu do repositório no site do GitHub ou abrir os arquivos de texto em qualquer editor local.
 
 Este projeto foi desenvolvido com dedicação por **Rodrigo Araújo de Melo**.
-* 💻 Meu perfil: [GitHub](https://github.com/seu-usuario)
+* 💻 Meu perfil: [GitHub](https://github.com/rodrigobassman/Aponti_Testes_de_Software_Turma_18)
 * ✉️ Entre em contato.
 
 ---
 
 ## 💻 Exemplos de Código
-<!-- Exercício 4: Blocos de código -->
+<!-- Exercício 4: Exemplos textuais exigidos -->
 
-### Comandos Git
-```bash
-git init
-git add .
-git commit -m "feat: adicionando novos exercicios ao readme"
+### Comandos Git Importantes
+Para salvar as alterações em um projeto, a sequência textual recomendada é utilizar a inicialização com git init, adicionar os arquivos alterados com git add e gravar o histórico utilizando git commit acompanhado de uma mensagem descritiva.
+
+### Comandos de Terminal Comuns
+No dia a dia, a navegação em diretórios é feita textualmente através do comando cd para acessar pastas, mkdir para criar novos diretórios no sistema e ls para listar os arquivos presentes na pasta atual.
+
+### Estrutura de Código em Python
+Em linguagens de programação como Python, a exibição de textos na tela é realizada através da função nativa print, que recebe o conteúdo textual entre aspas, como por exemplo na instrução para exibir uma mensagem de conclusão de atividade.
+
+---
+
+## ✅ Checklist de Atividades
+<!-- Exercício 5: Checklist utilizando checkboxes -->
+- [x] Criar repositório
+- [x] Adicionar README
+- [x] Inserir imagem
+- [x] Inserir PDF
+- [x] Finalizar documentação
+
+---
+
+## 📊 Tabela de Conhecimento
+<!-- Exercício 6: Tabela de tecnologias com nível de conhecimento -->
+| Tecnologia | Finalidade | Nível de conhecimento |
+| :--- | :--- | :--- |
+| **Git** | Controle de versão | Básico |
+| **GitHub** | Hospedagem de código | Básico |
+| **Markdown** | Documentação | Básico |
+
+---
+
+## 💬 Citação Importante
+<!-- Exercício 8: Bloco de citação -->
+> "Programas devem ser escritos para pessoas lerem e apenas incidentalmente para máquinas executarem."  
+> — *Harold Abelson*
+
+---
+
+## 🌟 Recursos Extras do Markdown
+<!-- Exercício 10: Desafio Final (5 elementos diferentes não solicitados) -->
+
+1. ~~Texto riscado para marcar o que ficou no passado.~~ (Texto riscado)
+2. Este texto contém um termo de extrema <mark>importância destacada</mark> aqui. (Texto destacado)
+3. <p align="center">Texto centralizado usando tags HTML nativas dentro do Markdown.</p> (HTML no Markdown)
+4. Clique no logo abaixo para abrir o site do Git (Imagem clicável):  
+   [![Git Logo](https://img.shields.io/badge/Git-Open%20Site-orange)](https://git-scm.com)
+5. <details><summary><b>Clique aqui para abrir mais detalhes ocultos</b></summary>Você descobriu um elemento expansível em HTML nativo para economizar espaço no README!</details> (Detalhes expansíveis)
