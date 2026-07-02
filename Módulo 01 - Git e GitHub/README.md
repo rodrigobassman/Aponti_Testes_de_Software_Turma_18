@@ -38,5 +38,5 @@ Criar um `portfólio` utilizando `GitHub`.
 ### 🌐 Links e Demonstrações do Projeto
 * 🔗 Acesse o site oficial do [GitHub](https://github.com)
 * 📖 Guia de Sintaxe do [Markdown](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* 🎬 Demonstração em GIF:
+
 ![Demonstração](https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif)
