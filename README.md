@@ -32,7 +32,7 @@ Cada pasta representa um módulo do curso. Dentro de cada módulo você encontra
 ---
 
 ## 🚀 Projetos
-* ✔️ **Sistema da Clinica de Psicologia**
+* ✔️ **A confirmar**
 
 ---
 
