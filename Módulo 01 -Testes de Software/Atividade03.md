@@ -18,7 +18,7 @@ Este documento apresenta uma visão clara e direta sobre a evolução da Garanti
 
 ## 2. O que mais atrapalha os projetos reais hoje?
 
-Mudar do modelo antigo para o moderno não é só comprar ferramentas novas, exige uma mudança na forma de pensar de toda a equipa. Na prática, estes são os três maiores desafios atuais:
+Mudar do modelo antigo para o moderno não é só comprar ferramentas novas, exige uma mudança na forma de pensar de toda a equipe. Na prática, estes são os três maiores desafios atuais:
 
 ### 🚨 A Armadilha da Pressa (Velocidade vs. Qualidade)
 As empresas precisam de lançar novidades na aplicação ou site todas as semanas (ou até todos os dias). O QA corre contra o tempo para testar tudo rápido. Se o processo não estiver bem ajustado, o QA torna-se o "gargalo" que atrasa a entrega, ou a equipa salta etapas e o cliente final acaba por descobrir o bug.
