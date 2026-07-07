@@ -14,13 +14,9 @@ Este repositório reúne materiais utilizados na **Formação em Testes de Softw
 
 | Módulo | Conteúdo |
 | :---: | :--- |
-| **01** | Git e GitHub |
-| **02** | Lógica básica de sistemas |
-| **03** | Testes manuais |
-| **04** | Ferramentas básicas da área |
-| **05** | Testes de API |
-| **06** | Automação de testes |
-| **07** | Qualidade de software e integração contínua |
+| **00** | Git e GitHub |
+| **01** | Testes de Software |
+
 
 ---
 
