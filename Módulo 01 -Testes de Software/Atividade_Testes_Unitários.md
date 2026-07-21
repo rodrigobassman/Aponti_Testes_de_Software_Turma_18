@@ -20,4 +20,4 @@ c) Quais testes seriam de sistema?
 • Fluxo de Tentativa de Compra com Carrinho Vazio: Validar a experiência do usuário de ponta a ponta ao tentar navegar até a tela de checkout sem itens adicionados, garantindo que o sistema exiba a mensagem amigável na tela e bloqueie a finalização.
 • Jornada de Primeiro Acesso (Cadastro ao Primeiro Pedido): Validar o fluxo completo de um novo cliente: criar a conta no formulário da tela, ser redirecionado para a página inicial já autenticado, navegar pelos produtos e concluir o primeiro pedido.
 • Fluxo de Recuperação de Senha no Navegador: Validar se o usuário consegue clicar em "Esqueci minha senha", receber o e-mail de redefinição, alterar a senha na tela e fazer o login com a nova credencial.
-	Justificativa: O foco dos Testes de Sistema é validar o comportamento do software como um todo, simulação fiel do ambiente real de uso do cliente.
+	Justificativa: Ele testa se o conjunto completo funciona junto no ambiente final: tela Web + código + banco de dados + servidores + internet.
