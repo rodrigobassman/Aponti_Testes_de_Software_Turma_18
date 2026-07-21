@@ -21,3 +21,11 @@ c) Quais testes seriam de sistema?
 • Jornada de Primeiro Acesso (Cadastro ao Primeiro Pedido): Validar o fluxo completo de um novo cliente: criar a conta no formulário da tela, ser redirecionado para a página inicial já autenticado, navegar pelos produtos e concluir o primeiro pedido.
 • Fluxo de Recuperação de Senha no Navegador: Validar se o usuário consegue clicar em "Esqueci minha senha", receber o e-mail de redefinição, alterar a senha na tela e fazer o login com a nova credencial.
 	Justificativa: Ele testa se o conjunto completo funciona junto no ambiente final: tela Web + código + banco de dados + servidores + internet.
+
+d) Quais testes seriam de aceitação?
+•	validação dos Critérios de Aceite das Regras de Negócio do Carrinho: O dono do negócio testando se o sistema aplica corretamente as regras comerciais;
+•	Homologação do Fluxo Completo de Vendas: Um grupo de usuários reais ou a equipe de negócios executando simulações de compras reais no ambiente de homologação para dar o "ok" antes do sistema ir para o ar.
+•	Validação de Conformidade e LGPD no Cadastro: Testar e aprovar se o formulário de cadastro de usuários solicita e armazena o consentimento do uso de dados do cliente exatamente de acordo com os requisitos jurídicos e de compliance da empresa.
+•	Teste de Acessibilidade e Usabilidade Comercial: O cliente/contratante validando se as telas do SGP atendem aos padrões estipulados de usabilidade (se é fácil para o cliente final usar) e acessibilidade exigidos no projeto.
+	Justificativa: No Teste de Aceitação, validamos se o sistema atende às regras do negócio e entrega o valor que foi combinado no contrato/requisitos.
+
