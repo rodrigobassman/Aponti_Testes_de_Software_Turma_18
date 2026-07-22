@@ -1,3 +1,14 @@
+Testes Não Funcionais
+Atividade Avaliativa
+
+Dado um sistema proposto, os alunos deverão elaborar um checklist de testes não funcionais, cobrindo obrigatoriamente:
+•	Performance
+•	Segurança
+•	Usabilidade
+•	Compatibilidade
+
+Cada item do checklist deve indicar o que será verificado e qual o risco associado.
+
 a)	Performance:
 b)	Segurança:
 Autenticação de Usuários e Controle de Acesso 
