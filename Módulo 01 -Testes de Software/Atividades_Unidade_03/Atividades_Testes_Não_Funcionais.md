@@ -16,6 +16,7 @@ b)	Segurança:
 •	Se o fluxo de cadastro/autenticação impede que um usuário comum acesse a área administrativa de gestão de horários.
 •	Se tentativas de agendamento por usuários não logados são bloqueadas e redirecionadas para a tela de login.
 	Risco Associado:
+•	Invasão da Área Administrativa: Usuários comuns com o poder de alterar dados.
 
 c)	Usabilidade:
 d)	Compatibilidade:
