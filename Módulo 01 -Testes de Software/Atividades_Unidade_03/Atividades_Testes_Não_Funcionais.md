@@ -70,9 +70,35 @@ Privacidade nas Notificações de Confirmação
 •	Quebra de sigilo do paciente: pessoas com acesso à tela de notificação ou e-mail do usuário podem visualizar informações médicas confidenciais.
 
 c)	Usabilidade:
+Clareza e Transparência na Regra de Cancelamento
+	O que será validado:
+•	Se o sistema exibe corretamente o prazo limite para cancelamento tanto na tela de detalhes da consulta, quanto no momento do agendamento.
+•	Se ao tentar cancelar uma consulta a menos de 24 horas do horário, o sistema exibe uma mensagem sobre não ser possível cancelar pelo sistema ao invés de travar ou dar um erro.
 
+	Risco Associado:
+•	Frustração do Paciente e Sobrecarga do Suporte: Reclamações por o usuário não entender por que não consegue cancelar.
 
+Facilidade no Fluxo Principal de Agendamento e Consulta
+O que será verificado:
+•	Quantidade de etapas/cliques necessários até a confirmação do agendamento.
+•	Se os filtros de especialidade e profissional oferecem retorno rápido e exibição organizada.
+	Risco Associado:
+•	Abandono do Agendamento: Dificuldade do uso gerar desistências no agendamento.
 
-d)	Compatibilidade:
+Feedback Visual e Prevenção de Erros
+	O que será verificado:
+•	Se a plataforma fornece avisos visuais imediatos e sem erros após uma ação.
+•	Se botões de confirmação ficam desabilitados após o primeiro clique para evitar envios por ansiedade.
+
+Risco Associado:
+Ações duplicadas por incerteza: Cliques repetidos no botão confirmar por não saber se a ação funcionou.
+
+Eficiência na Área Administrativa de Gestão de Horários:
+	O que será verificado:
+•	Se a interface administrativa permite visualizar, cadastrar, bloquear e liberar horários de maneira rápida.
+
+	Risco Associado:
+•	Erros Operacionais da Equipe: Cadastros errados ou indisponíveis.
+
 
 
