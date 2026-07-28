@@ -1,1 +1,111 @@
-Olá mundo
+# 📋 Casos de Teste Completos: Tela de Login
+
+> **Atividade Avaliativa:** A partir de comportamentos esperados em uma tela de login, crie pelo menos 10 casos de testes completos, aplicando os conceitos e estruturas vistos em aula. Além do caminho feliz, pense em cenários alternativos que um bom tester faria (fora da caixinha). Linguagem clara e objetiva, steps bem separados, resultado esperado observável e sem termos genéricos.
+
+---
+
+### 1. No campo do e-mail, aceitar letras e números
+* **Objetivo:** Validar se o campo de identificação aceita a inserção de caracteres alfanuméricos.
+* **Pré-condições:** O usuário deve estar na tela de login do sistema.
+* **Passos:**
+  1. Localizar o campo de e-mail/identificação.
+  2. Digitar uma combinação de letras e números no campo.
+* **Resultado Esperado:** O sistema deve aceitar e exibir corretamente todos os caracteres alfanuméricos digitados no campo sem bloqueios ou truncamentos.
+
+---
+
+### 2. No campo senha, aceitar apenas números
+* **Objetivo:** Validar a restrição de tipo de caractere permitida no campo de senha.
+* **Pré-condições:** O usuário deve estar na tela de login do sistema.
+* **Passos:**
+  1. Localizar o campo de senha.
+  2. Tentar digitar letras e símbolos no campo de senha.
+  3. Digitar uma sequência estritamente numérica.
+* **Resultado Esperado:** O sistema deve bloquear a digitação de letras e símbolos, permitindo a entrada e exibição apenas de caracteres numéricos.
+
+---
+
+### 3. Aceitar CPF inválido
+* **Objetivo:** Verificar o comportamento do sistema ao submeter um CPF com formato ou dígitos verificadores inválidos.
+* **Pré-condições:** O usuário deve estar na tela de login e o sistema deve utilizar CPF como identificador.
+* **Passos:**
+  1. Inserir um CPF com numeração inválida no campo de identificação.
+  2. Preencher o campo de senha com dados válidos.
+  3. Clicar no botão de entrar/login.
+* **Resultado Esperado:** O sistema deve recusar a autenticação, permanecer na tela de login e exibir uma mensagem de erro informando que o CPF é inválido.
+
+---
+
+### 4. Aceitar CPF com número excedente
+* **Objetivo:** Validar a restrição de tamanho máximo para o campo de CPF.
+* **Pré-condições:** O usuário deve estar na tela de login.
+* **Passos:**
+  1. Tentar digitar uma sequência numérica maior do que 11 dígitos no campo de CPF.
+* **Resultado Esperado:** O sistema deve impedir que o usuário digite além do 11º dígito ou emitir um alerta de limite excedido de caracteres.
+
+---
+
+### 5. Não reconhecer usuário cadastrado
+* **Objetivo:** Validar a resposta do sistema ao tentar realizar o login com um CPF ou e-mail válido no formato, mas que não existe na base de dados.
+* **Pré-condições:** O usuário deve estar na tela de login.
+* **Passos:**
+  1. Inserir um CPF/e-mail válido que não possui cadastro prévio no sistema.
+  2. Inserir uma senha qualquer.
+  3. Clicar no botão de entrar.
+* **Resultado Esperado:** O sistema deve bloquear o acesso, permanecer na tela de login e exibir uma mensagem de erro informando que o usuário não foi reconhecido ou encontrado.
+
+---
+
+### 6. Sucesso no acesso
+* **Objetivo:** Validar o caminho feliz da autenticação com credenciais corretas.
+* **Pré-condições:** O usuário deve estar previamente cadastrado e ativo no sistema.
+* **Passos:**
+  1. Acessar a tela de login.
+  2. Inserir o CPF ou e-mail cadastrado e correto.
+  3. Inserir a senha correspondente correta.
+  4. Clicar no botão de entrar.
+* **Resultado Esperado:** O sistema deve autenticar o usuário com sucesso e redirecioná-lo para a página principal da aplicação.
+
+---
+
+### 7. Bloqueio por excesso de erros
+* **Objetivo:** Validar a regra de segurança de bloqueio temporário da conta após tentativas sucessivas de senhas incorretas.
+* **Pré-condições:** O usuário deve possuir um cadastro ativo.
+* **Passos:**
+  1. Acessar a tela de login.
+  2. Inserir um CPF ou e-mail válido.
+  3. Inserir uma senha incorreta repetidas vezes consecutivas até atingir o limite estipulado pelo sistema.
+* **Resultado Esperado:** O sistema deve bloquear temporariamente o acesso à conta por questões de segurança e exibir uma mensagem orientando sobre o bloqueio.
+
+---
+
+### 8. Dificuldade para conseguir recuperar usuário ou senha
+* **Objetivo:** Validar o comportamento e a estabilidade do fluxo alternativo de recuperação de credenciais esquecidas.
+* **Pré-condições:** O usuário deve estar na tela de login.
+* **Passos:**
+  1. Clicar no link ou botão de recuperação de usuário ou senha.
+  2. Inserir o dado de identificação solicitado.
+  3. Enviar a solicitação e verificar o retorno do sistema.
+* **Resultado Esperado:** O sistema deve processar a solicitação sem travar ou gerar erros inesperados, permitindo que o usuário conclua a recuperação (ou registrar falhas de instabilidade caso o fluxo apresente lentidão ou falha de envio).
+
+---
+
+### 9. Não aceitar mudança de e-mail
+* **Objetivo:** Validar a restrição de segurança que impede a alteração direta do identificador principal (e-mail) da conta.
+* **Pré-condições:** O usuário deve estar logado e acessar as configurações de perfil.
+* **Passos:**
+  1. Navegar até a seção de dados cadastrais/perfil.
+  2. Tentar alterar o campo referente ao e-mail.
+  3. Clicar no botão de salvar alterações.
+* **Resultado Esperado:** O sistema deve manter o campo de e-mail bloqueado para edição direta ou exibir uma mensagem informando que a alteração não é permitida.
+
+---
+
+### 10. Usuário fazer modificações no cadastro
+* **Objetivo:** Validar se o usuário consegue atualizar com sucesso os dados permitidos em seu perfil após o login.
+* **Pré-condições:** O usuário deve estar autenticado e na tela de edição de cadastro.
+* **Passos:**
+  1. Acessar a área de edição de perfil.
+  2. Modificar um dado cadastral permitido.
+  3. Clicar no botão de salvar alterações.
+* **Resultado Esperado:** O sistema deve salvar as modificações com sucesso, exibir uma mensagem de confirmação e atualizar os dados exibidos no perfil do usuário.
