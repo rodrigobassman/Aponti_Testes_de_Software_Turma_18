@@ -1,18 +1,14 @@
-Atividade Avaliativa:
+# Casos de Teste - Tela de Login e Perfil
 
-A partir de comportamentos esperados em uma tela de login, crie pelo menos 10 casos de testes completos, aplicando os conceitos e estruturas vistos em aula.
-Além do caminho feliz, pense em cenários alternativos que um bom tester faria (fora da caixinha)
-Lembre-se: Linguagem clara e objetiva, steps bem separados, resultado esperado observável e sem termos genéricos.
-
-| ID | TÍTULO | PRÉCONDIÇÕES | RESULTADO ESPERADO |
-|---|---|---|---|
-| **CT01** | No campo do e-mail, aceitar letras e números | O usuário está na tela de login. | O sistema aceita e exibe corretamente letras e números no campo de e-mail. |
-| **CT02** | No campo senha, aceitar apenas números | O usuário está na tela de login. | O sistema restringe a entrada e aceita apenas caracteres numéricos no campo de senha. |
-| **CT03** | Aceitar CPF inválido | O usuário está na tela de login e o sistema utiliza CPF. | O sistema identifica a inconsistência, não prossegue com o login e exibe mensagem de erro de CPF inválido. |
-| **CT04** | Aceitar CPF com número excedente | O usuário está na tela de login. | O sistema impede a digitação de dígitos extras além do limite de 11 números do CPF. |
-| **CT05** | Não reconhecer usuário cadastrado | O usuário está na tela de login com dados inexistentes na base. | O sistema recusa o acesso e exibe mensagem de usuário não encontrado ou inválido. |
-| **CT06** | Usuário fazer modificações no cadastro | O usuário está autenticado e na tela de perfil. | O sistema permite alterar e salvar os dados cadastrais permitidos com sucesso. |
-| **CT07** | Não aceitar mudança de e-mail | O usuário está logado nas configurações de perfil. | O sistema bloqueia a alteração direta do e-mail principal por razões de segurança. |
-| **CT08** | Dificuldade para conseguir recuperar usuário ou senha | O usuário está na tela de login e acessa o fluxo de recuperação. | O sistema processa o pedido ou registra a falha de envio/instabilidade conforme o comportamento do fluxo. |
-| **CT09** | Bloqueio por excesso de erros | O usuário está na tela de login. | O sistema bloqueia temporariamente o acesso após várias tentativas consecutivas de senha errada. |
-| **CT10** | Sucesso no acesso | O usuário possui cadastro ativo e correto. | O sistema autentica as credenciais e redireciona o usuário para a página principal (dashboard). |
+| ID | Título | Pré-condições | Passos | Massa de Dados | Prioridade | Resultado Esperado |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **CT01** | Aceitar letras e números no e-mail | O usuário está na tela de login. | 1. Clicar no campo de e-mail<br>2. Digitar letras e números | `teste123@email.com` | Média | O sistema aceita e exibe corretamente letras e números no campo de e-mail. |
+| **CT02** | Aceitar apenas números no campo senha | O usuário está na tela de login. | 1. Clicar no campo de senha<br>2. Tentar digitar letras e números | Letras e números (`abc123`) | Média | O sistema restringe a entrada e aceita apenas caracteres numéricos no campo de senha. |
+| **CT03** | Validação de CPF inválido | O usuário está na tela de login com campo de CPF. | 1. Digitar um CPF inválido<br>2. Preencher a senha<br>3. Clicar no botão de login | CPF: `111.111.111-11` | Alta | O sistema identifica a inconsistência, não prossegue com o login e exibe mensagem de erro de CPF inválido. |
+| **CT04** | Bloqueio de número excedente no CPF | O usuário está na tela de login. | 1. Tentar digitar mais de 11 dígitos no campo de CPF | CPF com 12+ dígitos (`123456789012`) | Baixa | O sistema impede a digitação de dígitos extras além do limite de 11 números do CPF. |
+| **CT05** | Tentativa de login com usuário não cadastrado | O usuário está na tela de login. | 1. Digitar e-mail/usuário inexistente<br>2. Digitar senha válida<br>3. Clicar em "Entrar" | E-mail: `naoexiste@email.com`<br>Senha: `123456` | Alta | O sistema recusa o acesso e exibe mensagem de usuário não encontrado ou inválido. |
+| **CT06** | Modificação de dados no cadastro | O usuário está autenticado e na tela de perfil. | 1. Alterar um dado permitido (ex: nome ou telefone)<br>2. Clicar no botão "Salvar" | Novo Nome: `João da Silva` | Média | O sistema permite alterar e salvar os dados cadastrais permitidos com sucesso. |
+| **CT07** | Restrição de alteração de e-mail | O usuário está logado nas configurações de perfil. | 1. Acessar o campo de e-mail nas configurações<br>2. Tentar modificar o endereço de e-mail | E-mail novo: `novo@email.com` | Alta | O sistema bloqueia a alteração direta do e-mail principal por razões de segurança. |
+| **CT08** | Fluxo de recuperação de usuário ou senha | O usuário está na tela de login. | 1. Clicar no link "Esqueci minha senha"<br>2. Informar o e-mail cadastrado<br>3. Solicitar o envio | E-mail: `usuario@email.com` | Alta | O sistema processa o pedido ou registra a falha de envio/instabilidade conforme o comportamento do fluxo. |
+| **CT09** | Bloqueio por excesso de erros de senha | O usuário está na tela de login. | 1. Digitar um e-mail válido<br>2. Digitar senha incorreta repetidas vezes até atingir o limite | Senha errada repetida N vezes | Alta | O sistema bloqueia temporariamente o acesso após várias tentativas consecutivas de senha errada. |
+| **CT10** | Sucesso no acesso (Caminho Feliz) | O usuário possui cadastro ativo e correto. | 1. Digitar e-mail válido e cadastrado<br>2. Digitar senha correta<br>3. Clicar em "Entrar" | E-mail: `valido@email.com`<br>Senha: `senha123` | Alta | O sistema autentica as credenciais e redireciona o usuário para a página principal (dashboard). |
