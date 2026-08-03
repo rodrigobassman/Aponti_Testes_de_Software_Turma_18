@@ -2,7 +2,7 @@
 
 ---
 
-## 🟢 1. Testes de Smoke (Fumaça)
+## 🟢 1. Testes de Smoke
 
 > **Objetivo:** Verificar se as funcionalidades mais críticas e vitais do aplicativo estão de pé. Se algum desses falhar, o build é rejeitado imediatamente.
 
@@ -21,12 +21,12 @@
 * **Resultado Esperado:** O sistema autentica e navega para o Dashboard (Home) da conta.
 * **Justificativa:** O login é o fluxo principal; se a autenticação falhar, todo o sistema fica inacessível.
 
-### CT-SM-04: Carregamento do Dashboard Principal
+### CT-SM-04: Carregamento da Tela Principal
 * **Cenário:** Acessar o painel principal após o login.
 * **Resultado Esperado:** O painel carrega com o menu principal, atalhos e a área de saldo visível.
 * **Justificativa:** Confirma que o servidor está respondendo e entregando a interface pós-login.
 
-### CT-SM-05: Encerramento de Sessão (Logout)
+### CT-SM-05: Encerramento de Sessão
 * **Cenário:** Clicar no botão "Sair".
 * **Resultado Esperado:** A sessão é encerrada e o usuário retorna à tela inicial de login.
 * **Justificativa:** Garante que a sessão pode ser encerrada com segurança, fechando o ciclo básico de uso.
@@ -37,7 +37,7 @@
 
 > **Objetivo:** Foco estrito nas alterações e correções recém-feitas (Correção no Login e Ajuste no Saldo). Avalia se as modificações específicas funcionam como esperado sem aprofundar na aplicação inteira.
 
-### CT-SA-01: Validação do Fechamento Inesperado no Login (Bug Fix)
+### CT-SA-01: Validação do Fechamento Inesperado no Login
 * **Cenário:** Inserir credenciais válidas e efetuar o login.
 * **Resultado Esperado:** A autenticação é concluída sem travar o app no momento da validação das credenciais.
 * **Justificativa:** Testa diretamente o ponto corrigido no código de login para confirmar que a falha técnica foi sanada.
@@ -57,7 +57,7 @@
 * **Resultado Esperado:** O sistema reconhece a biometria e efetua o login sem erros.
 * **Justificativa:** Como o login passou por manutenção, é crucial testar a rota alternativa de autenticação para validar o pacote de login.
 
-### CT-SA-05: Atualização Manual do Saldo (Pull-to-Refresh)
+### CT-SA-05: Atualização Manual do Saldo 
 * **Cenário:** Deslizar a tela principal para baixo para recarregar as informações financeiras.
 * **Resultado Esperado:** A requisição é enviada ao servidor e o saldo é atualizado na tela.
 * **Justificativa:** Testa a comunicação da área ajustada do saldo com a API de contas em tempo real.
