@@ -1,4 +1,4 @@
-Atividade Avaliativa 1:
+Atividade Avaliativa 2:
 
 Cenário: Uma nova versão de um sistema bancário foi implantada com correção no login e um ajuste na exibição do saldo tela inicial.
 
