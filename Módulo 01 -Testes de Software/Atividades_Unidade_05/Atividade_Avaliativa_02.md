@@ -3,7 +3,7 @@ Atividade Avaliativa 2:
 Cenário: Uma nova versão de um sistema bancário foi implantada com correção no login e um ajuste na exibição do saldo tela inicial.
 
 Aplicar a estratégia definida anteriormente (visão macro) para criar um plano de testes simples e executável.
-Considere os pontos abaixo em relação ao projeto em que estão trabalhando
+Considere os pontos abaixo em relação ao projeto em que estão trabalhando.
 
 Funcionalidades principais definidas: apenas o login e o saldo na tela inicial serão testados, conforme o cenário proposto, evitando assim desperdício de tempo.
 
