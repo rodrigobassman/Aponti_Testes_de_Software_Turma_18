@@ -11,5 +11,5 @@ Prazo de entrega estabelecido: Como o time está reduzido, não há tempo para r
 
 Time reduzido: é mais seguro compartilhar os testes ou focar em testes Smoke para conferir se as funcionalidades principais (login e saldo) funcionam corretamente.
 
-Ambiente de testes disponível: Assim que o código é liberado para este ambiente, o Smoke Test é rodado imediatamente para validar se o login responde e se o saldo aparece.
+Ambiente de testes disponível: Assim que o código é liberado para este ambiente, o Smoke Test é rodado imediatamente para validar se o login responderá e se o saldo aparecerá.
 
