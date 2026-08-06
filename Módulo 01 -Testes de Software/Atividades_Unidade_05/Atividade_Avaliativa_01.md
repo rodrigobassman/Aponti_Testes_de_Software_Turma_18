@@ -41,8 +41,43 @@ Com base no cenário apresentado, crie uma estratégia de testes contendo os ite
 * **Testes de Carga/Estresse:** Simulações de pico massivo de acessos simultâneos na infraestrutura# Estratégia de Testes: Release de Correção de Login e Ajuste de Saldo
 
 ---
+# Atividade Avaliativa 1.1
 
-## 🎯 1. Objetivo da Estratégia
+---
+
+## 🛠️ 1. Abordagens de Teste
+
+### ✋ Quais testes serão realizados de forma MANUAL?
+* **Testes de Sanidade Visual e UI:** Validação da formatação do saldo (ex: alinhamento do texto, ausência de sobreposição de elementos gráficos) e comportamento interativo do ícone de ocultar/exibir saldo.
+* **Testes Exploratórios e de Usabilidade:** Exploração livre no fluxo de login e na navegação pós-autenticação para identificar comportamentos anômalos, travamentos e respostas inesperadas do aplicativo.
+* **Reteste de Correções (Bugs em Aberto):** Validação imediata das correções (*hotfixes*) enviadas pelos desenvolvedores durante o ciclo de testes no mesmo dia.
+
+### 🤖 Quais testes poderão ser AUTOMATIZADOS?
+* **Testes de Smoke (Fumaça):** Script de automação em nível de API ou UI leve para disparar requisições de autenticação e verificar se o *endpoint* de saldo está respondendo status `200 OK` assim que o *build* é implantado.
+* **Suíte de Regressão Básica (Execução em Segundo Plano):** Scripts pré-existentes cobrindo os fluxos principais (ex: checagem de API do Pix e extrato) para garantir que as alterações não impactaram outros módulos.
+
+### ⚖️ Por que essa combinação foi escolhida?
+A combinação entre **automação leve no Smoke/Regressão** e **execução manual focada na Sanidade/Usabilidade** foi definida com base no **curto tempo disponível**:
+* A **automação** garante um *feedback* instantâneo (menos de 5 minutos) no momento do *deploy*, evitando perda de tempo com *builds* quebrados.
+* O **teste manual** é mais eficiente e flexível para avaliar ajustes de layout recém-feitos e validar correções de *bugs* pontuais, dispensando o custo de criar e dar manutenção em scripts automatizados para uma *release* emergencial.
+
+---
+
+## ⚠️ 2. Riscos e Mitigação
+
+### 🔴 Quais são os principais riscos do sistema?
+1. **Risco Crítico de Indisponibilidade (Falha no Login):** O aplicativo fechar sozinho (*crash*) ou recusar credenciais válidas, impedindo 100% dos clientes de acessar o banco.
+2. **Risco de Exposição de Informações Sensíveis / Inconsistência de Dados (Erro no Saldo):** O saldo aparecer zerado, desalinhado, sobreposto ou com falha no mascaramento (modo privado), afetando a confiabilidade da instituição.
+3. **Risco de Atraso na Liberação (Gargalo no Reteste):** Atraso na entrega do pacote por falta de tempo para validar *bugs* encontrados durante a janela de testes.
+
+### 🛡️ Como a estratégia de testes ajuda a REDUZIR esses riscos?
+* **Mitigação do Risco de Indisponibilidade:** Disparo imediato do *Smoke Test* no ponto zero do *deploy*. Se o login falhar, o *build* é rejeitado na hora, impedindo que código quebrado chegue perto do usuário final.
+* **Mitigação do Risco de Inconsistência no Saldo:** Foco prioritário de testes de sanidade e usabilidade no componente de saldo, cobrindo cenários com valores diversos, mascaramento e rotação de tela.
+* **Mitigação do Risco de Atraso:** Restrição estrita do escopo de teste aos módulos alterados (Login e Saldo), eliminando testes desnecessários em funcionalidades não impactadas e priorizando retestes no mesmo dia.
+
+# Atividade Avaliativa 1.2
+
+## 🎯 1.2 Objetivo da Estratégia
 
 Com base no cenário apresentado, crie uma estratégia de testes contendo os itens abaixo:
 * Objetivo da estratégia
