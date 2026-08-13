@@ -14,8 +14,8 @@ Testes focados na validação de tipos de entrada e integridade de dados.
 
 | ID | Entrada (Dados) | Técnica | Resultado Esperado |
 | :--- | :--- | :--- | :--- |
-| **PE-01** | Esp: "Cardiologia" | Classe Válida | Cadastro realizado com sucesso. |
-| **PE-02** | Esp: "Cardiologia" (repetida) | Classe Inválida | Bloquear duplicidade; erro de "Já cadastrado". |
+| **PE-01** | Esp: "Neurologia" | Classe Válida | Cadastro realizado com sucesso. |
+| **PE-02** | Esp: "Neurologia" (repetida) | Classe Inválida | Bloquear duplicidade; erro de "Já cadastrado". |
 | **PE-03** | Esp: "!@#$%" | Classe Inválida | Bloquear caracteres especiais; erro de validação. |
 
 ## 3. Estados e Transições
