@@ -1,4 +1,4 @@
-"""# Atividade Avaliativa: Aplicação de Heurísticas de Testes de Software
+# Atividade Avaliativa: Aplicação de Heurísticas de Testes de Software
 
 **Funcionalidade Analisada:** Cadastro de Especialidades  
 **Objetivo:** Identificar falhas, mapear riscos de software e propor áreas prioritárias de atenção com base em heurísticas reconhecidas da área de Qualidade de Software (QA).
@@ -55,10 +55,3 @@ Para a realização deste teste exploratório e estruturado, foram selecionadas 
 >
 > 1. **Nielsen (Usabilidade & Interface):** Permitiu identificar falhas graves de comunicação entre o sistema e o usuário, como a ambiguidade nos rótulos (*campo "Nome" sem contexto*) e a falta de resposta do sistema (*ausência de confirmação*). Isso reduz drasticamente a probabilidade de erros humanos durante o uso do software.
 > 2. **Testing Tours (Feature Tour & Garbage Tour):** Permitiu testar os limites do formulário e a robustez da persistência de dados. Essa abordagem evidenciou a falta de restrições de duplicidade e a inconsistência no modelo de dados, prevenindo a degradação e o acúmulo de dados incorretos no banco.
-"""
-
-file_path = "Atividade_Heuristicas_de_Testes.md"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(markdown_content)
-
-print(f"File saved successfully as {file_path}")
