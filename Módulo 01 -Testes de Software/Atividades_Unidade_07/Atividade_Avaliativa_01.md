@@ -1,4 +1,4 @@
-markdown_content = """# Atividade Avaliativa: Aplicação de Heurísticas de Testes de Software
+"""# Atividade Avaliativa: Aplicação de Heurísticas de Testes de Software
 
 **Funcionalidade Analisada:** Cadastro de Especialidades  
 **Objetivo:** Identificar falhas, mapear riscos de software e propor áreas prioritárias de atenção com base em heurísticas reconhecidas da área de Qualidade de Software (QA).
