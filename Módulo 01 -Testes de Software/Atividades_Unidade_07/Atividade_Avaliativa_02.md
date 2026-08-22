@@ -11,8 +11,8 @@ Divisão das entradas em classes válidas e inválidas para garantir o tratament
 
 | ID | Cenário / Entrada | Classe de Equivalência | Técnica Utilizada | Resultado Esperado |
 | :--- | :--- | :--- | :--- | :--- |
-| **CT-PE01** | `Cardiologia` (11 caracteres) | Classe Válida (Texto com tamanho permitido) | Particionamento por Equivalência | Registro salvo com sucesso e mensagem de confirmação exibida. |
-| **CT-PE02** | `Ped` (3 caracteres + espaço + números: `Ped 123`) | Classe Inválida (Caracteres especiais/números) | Particionamento por Equivalência | Sistema bloqueia o envio e exibe alerta: "O nome deve conter apenas letras". |
+| **CT-PE01** | `Psicologia Clinica` (18 caracteres) | Classe Válida (Texto com tamanho permitido) | Particionamento por Equivalência | Registro salvo com sucesso e mensagem de confirmação exibida. |
+| **CT-PE02** | `Psico 123` (Contém números) | Classe Inválida (Caracteres especiais/números) | Particionamento por Equivalência | Sistema bloqueia o envio e exibe alerta: "O nome deve conter apenas letras". |
 | **CT-PE03** | Campo em branco / Vazio (`""`) | Classe Inválida (Campo obrigatório ausente) | Particionamento por Equivalência | Sistema impede o cadastro e destaca o campo com aviso: "Campo obrigatório". |
 
 ---
@@ -23,9 +23,9 @@ Testes focados nas fronteiras das regras de tamanho do campo (Mínimo: 3 / Máxi
 
 | ID | Cenário / Entrada | Limite Testado | Técnica Utilizada | Resultado Esperado |
 | :--- | :--- | :--- | :--- | :--- |
-| **CT-VL01** | `UT` (2 caracteres) | Limite Inferior Inválido (Mínimo - 1) | Análise de Valor Limite | Cadastro rejeitado com aviso: "O nome deve ter no mínimo 3 caracteres". |
-| **CT-VL02** | `Ortopedia e Traumatologia Med` (30 caracteres) | Limite Superior Válido (Máximo exato) | Análise de Valor Limite | Registro salvo com sucesso. |
-| **CT-VL03** | `Ortopedia e Traumatologia Medic` (31 caracteres) | Limite Superior Inválido (Máximo + 1) | Análise de Valor Limite | Campo limita a digitação em 30 caracteres ou exibe erro de limite excedido. |
+| **CT-VL01** | `Psi` (2 caracteres + espaço ou apenas 2 letras: `Psi` tem 3, então `Ps` = 2 caracteres) | Limite Inferior Inválido (Mínimo - 1) | Análise de Valor Limite | Cadastro rejeitado com aviso: "O nome deve ter no mínimo 3 caracteres". |
+| **CT-VL02** | `Avaliacao Psicologica Clinica` (30 caracteres) | Limite Superior Válido (Máximo exato) | Análise de Valor Limite | Registro salvo com sucesso. |
+| **CT-VL03** | `Avaliacao Psicologica Clinicaa` (31 caracteres) | Limite Superior Inválido (Máximo + 1) | Análise de Valor Limite | Campo limita a digitação em 30 caracteres ou exibe erro de limite excedido. |
 
 ---
 
